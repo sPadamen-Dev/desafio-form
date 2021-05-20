@@ -29,6 +29,8 @@ input{
     margin-bottom: 15px;
     border: none;
     outline: none;
+    border-width: 1%;
+    transition: 2s;
 }
 
 
@@ -74,10 +76,21 @@ a:hover{
 }
 
 button:hover{
-    transition-duration: 10s;
+    transition: 2s;
     background: -webkit-linear-gradient(left,#21d4fd,#b721ff);
 }
 
-input:active, input:hover{
-    border-bottom:3px solid #6a7dfe;
+/*input:active, input:hover{ 
+    width: 100%; 
+    border-bottom: 3px solid #6a7dfe;
+}*/
+
+.efeito-preenchimento{
+    width: 1%;
+    height: 2px;
+    background:-webkit-linear-gradient(left,#21d4fd,#b721ff);
+    transition: width 2s;
+}
+.efeito-preenchimento:hover{
+    width: 100%;
 }
